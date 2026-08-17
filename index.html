@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOVA — Modern Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#">NOVA<span>.</span></a>
+    <nav>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="cart" id="cartBtn">Cart <b id="count">0</b></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">NEW COLLECTION · 2026</p>
+        <h1>Designed for<br><span>your everyday.</span></h1>
+        <p class="sub">Minimal essentials. Premium quality. Made to stand out.</p>
+        <a class="cta" href="#shop">Shop collection →</a>
+      </div>
+      <div class="hero-card">
+        <div class="product-orb">N</div>
+        <p>Featured drop</p>
+        <strong>Nova One</strong>
+        <span>$129</span>
+      </div>
+    </section>
+
+    <section id="shop" class="shop">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">SHOP</p>
+          <h2>Featured products</h2>
+        </div>
+        <span>4 products</span>
+      </div>
+      <div class="grid">
+        <article class="product" data-name="Nova One" data-price="129">
+          <div class="pic p1"><span>N</span></div>
+          <div class="info"><div><h3>Nova One</h3><p>Wireless essentials</p></div><strong>$129</strong></div>
+          <button class="add">Add to cart</button>
+        </article>
+        <article class="product" data-name="Aero Bag" data-price="89">
+          <div class="pic p2"><span>A</span></div>
+          <div class="info"><div><h3>Aero Bag</h3><p>Everyday carry</p></div><strong>$89</strong></div>
+          <button class="add">Add to cart</button>
+        </article>
+        <article class="product" data-name="Core Hoodie" data-price="74">
+          <div class="pic p3"><span>C</span></div>
+          <div class="info"><div><h3>Core Hoodie</h3><p>Heavyweight cotton</p></div><strong>$74</strong></div>
+          <button class="add">Add to cart</button>
+        </article>
+        <article class="product" data-name="Mono Watch" data-price="159">
+          <div class="pic p4"><span>M</span></div>
+          <div class="info"><div><h3>Mono Watch</h3><p>Clean timepiece</p></div><strong>$159</strong></div>
+          <button class="add">Add to cart</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="banner">
+      <p class="eyebrow">WHY NOVA</p>
+      <h2>Simple products.<br>Serious design.</h2>
+      <p>Built for brands that care about every detail.</p>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="logo">NOVA<span>.</span></div>
+    <p>© 2026 Nova Studio · Showcase concept</p>
+  </footer>
+
+  <aside class="drawer" id="drawer">
+    <div class="drawer-head"><h2>Your cart</h2><button id="close">×</button></div>
+    <div id="items" class="items"><p class="empty">Your cart is empty.</p></div>
+    <div class="total"><span>Total</span><strong id="total">$0</strong></div>
+    <button class="checkout">Checkout</button>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+  <script src="script.js"></script>
+</body>
+</html>
