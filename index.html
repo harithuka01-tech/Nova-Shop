@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOVA — Modern Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#">NOVA<span>.</span></a>
+    <nav>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="cart" id="cartBtn">Cart <b id="count">0</b></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">NEW COLLECTION · 2026</p>
+        <h1>Designed for<br><span>your everyday.</span></h1>
+        <p class="sub">Premium everyday T-shirts. Clean fits. Fair prices.</p>
+        <a class="cta" href="#shop">Shop collection →</a>
+      </div>
+      <div class="hero-card">
+        <div class="product-orb">N</div>
+        <p>Featured tee</p>
+        <strong>Essential Tee</strong>
+        <span>$39</span>
+      </div>
+    </section>
+
+    <section id="shop" class="shop">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">SHOP</p>
+          <h2>T-Shirts</h2>
+        </div>
+        <span>4 T-Shirts</span>
+      </div>
+      <div class="grid">
+        <article class="product" data-name="Classic Black Tee" data-price="29">
+  <div class="pic p1"><span>01</span></div>
+  <div class="info"><div><h3>Classic Black Tee</h3><p>Premium cotton</p></div><strong>$29</strong></div>
+  <button class="add">Add to cart</button>
+</article>
+        <article class="product" data-name="Essential White Tee" data-price="29">
+  <div class="pic p2"><span>02</span></div>
+  <div class="info"><div><h3>Essential White Tee</h3><p>Heavyweight cotton</p></div><strong>$29</strong></div>
+  <button class="add">Add to cart</button>
+</article>
+        <article class="product" data-name="Oversized Grey Tee" data-price="34">
+  <div class="pic p3"><span>03</span></div>
+  <div class="info"><div><h3>Oversized Grey Tee</h3><p>Relaxed fit</p></div><strong>$34</strong></div>
+  <button class="add">Add to cart</button>
+</article>
+        <article class="product" data-name="Signature Purple Tee" data-price="39">
+  <div class="pic p4"><span>04</span></div>
+  <div class="info"><div><h3>Signature Purple Tee</h3><p>Limited edition</p></div><strong>$39</strong></div>
+  <button class="add">Add to cart</button>
+</article>
+      </div>
+    </section>
+
+    <section id="about" class="banner">
+      <p class="eyebrow">WHY NOVA</p>
+      <h2>Simple products.<br>Serious design.</h2>
+      <p>Built for brands that care about every detail.</p>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="logo">NOVA<span>.</span></div>
+    <p>© 2026 Nova Studio · Showcase concept</p>
+  </footer>
+
+  <aside class="drawer" id="drawer">
+    <div class="drawer-head"><h2>Your cart</h2><button id="close">×</button></div>
+    <div id="items" class="items"><p class="empty">Your cart is empty.</p></div>
+    <div class="total"><span>Total</span><strong id="total">$0</strong></div>
+    <button class="checkout">Checkout</button>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+  <script src="script.js"></script>
+</body>
+</html>
